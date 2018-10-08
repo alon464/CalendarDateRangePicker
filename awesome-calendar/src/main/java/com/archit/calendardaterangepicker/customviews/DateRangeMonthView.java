@@ -109,7 +109,7 @@ class DateRangeMonthView extends LinearLayout {
                 final Calendar selectedCal = Calendar.getInstance();
                 Date date = new Date();
                 try {
-                    date = DateRangeCalendarManager.SIMPLE_DATE_FORMAT.parse(String.valueOf(key));
+                    date = (local) DateRangeCalendarManager.SIMPLE_DATE_FORMAT.parse(String.valueOf(key));
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
